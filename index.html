@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Icon  -->
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap" rel="stylesheet">
+
+    <!-- Style sheet -->
+    <link rel="stylesheet" href="css/index.css">
+    
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    
+    <link rel="icon" href="images/favicon.PNG">
+    <title>Drishya</title>
+
+</head>
+<body>
+    <!-- Navbar starts -->
+    <nav class="navbar">
+        <div class="max-width">
+            <div class="logo">
+                <a href="#"><img src="images/logo.PNG" alt=""></a>
+            </div>
+            <ul class="menu">
+                <li><a href="#home" class="menu-btn active">Home</a></li>
+                <li><a href="#about" class="menu-btn">About</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Photography</a>
+                    <div class="dropdown-content">
+                        <a href="#nature">Nature</a>
+                        <a href="#potrait">Potrait</a>
+                        <a href="#wildlife">Wildlife</a>
+                        <a href="#wedding">Wedding</a>
+                    </div>
+                </li>
+                <li><a href="#contact" class="menu-btn">Contact</a></li>
+            </ul>
+            <div class="menu-btn">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- home section start -->
+    <section id="home">
+        <div class="max-width">
+            <div class="home-content">
+                <h1>Capturing beautiful moments</h1>
+            </div>
+        </div>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- About section starts -->
+    <section id="about">
+        <div class="max-width">
+            <div class="main-row">
+                <div class="col">
+                    <div class="mySlides">
+                        <img src="images/n1.jpg" style="width:100%; height: 23rem;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="images/j1.jpg" style="width:100%; height: 23rem;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="images/p2.jpg" style="width:100%; height: 23rem;">
+                    </div>
+                    
+                    <div class="mySlides">
+                        <img src="images/w2.jpg" style="width:100%; height: 23rem;">
+                    </div>
+                
+                    <div class="mySlides">
+                        <img src="images/f1.jpg" style="width:100%; height: 23rem;">
+                    </div>
+        
+                    <!-- <a class="prev" onclick="plusSlides(-1)"><i class="fas fa-chevron-left"></i></a>
+                    <a class="next" onclick="plusSlides(1)"><i class="fas fa-chevrn-right"></i></a> -->
+        
+                    <div class="scrollmenu">
+                        <img class="fade" src="images/n1.jpg" style="width:9rem; height: 7rem;" onclick="currentSlide(1)" alt="Nature">
+                        <img class="fade" src="images/j1.jpg" style="width:9rem; height: 7rem;" onclick="currentSlide(2)" alt="Wildlife">
+                        <img class="fade" src="images/p2.jpg" style="width:9rem; height: 7rem;" onclick="currentSlide(3)" alt="Potrait">
+                        <img class="fade" src="images/w2.jpg" style="width:9rem; height: 7rem;" onclick="currentSlide(4)" alt="Wedding">
+                        <img class="fade" src="images/f1.jpg" style="width:9rem; height: 7rem;" onclick="currentSlide(5)" alt="Food">
+                    </div>
+                </div>  
+                <div class="col about-text">
+                    <h1>Our Photography...</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ut minima inventore nihil recusandae commodi similique blanditiis nemo ullam explicabo assumenda aut odit quasi officiis, placeat necessitatibus molestias tenetur nam alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore voluptate facere facilis! Ipsa sit dolor saepe, reiciendis consequuntur porro facere debitis fugiat, quia, cumque officia eum accusantium aspernatur possimus minus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui tempore commodi ullam omnis, ad aliquam magnam culpa excepturi debitis repellat, labore quod nesciunt dolore alias quo repudiandae sint perspiciatis quidem.</p>
+                </div>  
+            </div>        
+        </div>
+    </section>
+    <!-- About section ends -->
+
+    <!-- Nature Section Starts -->
+    <section id="nature">
+        <div class="max-width">
+            <h1>Nature Photography</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <img src="images/n2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/n3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/n7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/n4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/n6.jpeg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/n5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/n9.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/n10.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Nature Section Ends -->
+
+    <!-- Potrait Section Starts -->
+    <section id="potrait">
+        <div class="max-width">
+            <h1>Potrait Photography</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <img src="images/p1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/p5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p9.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/p7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/p10.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Potrait Section Ends -->
+
+    <!-- Wildlife Section Starts -->
+    <section id="wildlife">
+        <div class="max-width">
+            <h1>Wildlife Photography</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <img src="images/j2.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j3.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/j5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j6.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/j8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j9.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/j10.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Wildlife Section Ends -->
+
+    <!-- Wedding Section Starts -->
+    <section id="wedding">
+        <div class="max-width">
+            <h1>Wedding Photography</h1>
+            <div class="row">
+                <div class="column">
+                    <div class="container">
+                        <img src="images/w1.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/w9.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <div class="container">
+                        <img src="images/w4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="column">
+                    <div class="container">
+                        <img src="images/w5.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/w4.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/w7.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column">
+                    <!-- <div class="container">
+                        <img src="images/w8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div> -->
+                    <div class="container">
+                        <img src="images/w8.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <img src="images/w10.jpg" alt="">
+                        <div class="overlay">
+                            <div class="icon">
+                                <i class="fa fa-search-plus"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Wedding Section Ends -->
+
+    <!-- Footer Starts -->
+    <footer>
+        <span>Developed By Shruti Mayank | <i class="far fa-copyright"></i> 2021 All rights reserved.</span>
+    </footer>
+    <!-- Footer ends -->
+
+    <script src="js/index.js"></script>
+</body>
+</html>

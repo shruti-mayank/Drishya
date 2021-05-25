@@ -1,0 +1,317 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+a{
+    text-decoration: none;
+}/* Common CSS */
+section{
+    padding: 6rem 0 0 0;
+}
+.max-width{
+    max-width: 100%;
+    padding: 0 7rem;
+    margin: auto;
+}
+
+/* Navbar */
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 999;
+    padding: 5px 0;
+    font-family: 'Merriweather', serif;
+    transition: all 0.3s ease;
+    background-color: #fff;
+    box-shadow: 0px 2px 3px 0px #1EA249;
+}
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.navbar .logo a img{
+    height: 4em;
+    width: 6em;
+}
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    display: block;
+    color: #1EA249;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: color 0.3s ease;
+    padding: 10px 5px;
+}
+.navbar .menu .dropdown {
+    position: relative;
+    display: inline-block;
+} 
+.navbar .menu .dropdown .dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 5px 10px 0px #ccc;
+    z-index: 1;
+}
+.navbar .menu .dropdown .dropdown-content a {
+    color: #1EA249;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    margin-left: auto;
+}
+.navbar .menu .dropdown .dropdown-content a:hover {
+    background-color: #1EA249;
+    color: #fff;
+}
+.navbar .menu .dropdown:hover .dropdown-content {
+    display: block;
+}
+/* menu btn styling */
+.menu-btn{
+    color: #1EA249;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* responsive media query start */
+@media (max-width: 991px) {
+    .max-width{
+        padding: 0 50px;
+    }
+}
+@media (max-width: 947px){
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active:before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        width: 100%;
+        left: -100%;
+        margin-top: 26rem;
+        background: #1EA249;
+        text-align: center;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 18px;
+        color: #fff;
+    }
+    .navbar .menu .dropdown .dropdown-content{
+        width: 200px;
+        text-align: left;
+    }
+    .navbar .menu .dropdown .dropdown-content a{
+        margin: 0px!important;
+    }
+}
+
+@media (max-width: 690px) {
+    .max-width{
+        padding: 0 23px;
+    }
+}
+  
+/* Home Section */
+#home{
+    display: flex;
+    background: url('/images/beach.jpg') no-repeat center;
+    height: 100vh;
+    color: #111;
+    background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Merriweather', serif;
+    opacity: 0.9;
+}
+#home .home-content h1{
+    text-align: center;
+    font-size: 50px;
+}
+
+/* About Section */
+#about .main-row {
+    display: flex;
+    flex-flow: row wrap;
+}
+#about .col{
+    -ms-flex: 50%; /* IE10 */
+    flex: 50%;
+    max-width: 50%;
+    padding: 0 1.5rem;
+}
+#about .mySlides {
+    display: none;
+}
+#about img{
+    cursor: pointer;
+}
+#about .mySlides{    
+    overflow: hidden;
+}
+#about .mySlides img{
+    transition: ease-in-out 0.3s;
+}
+#about .mySlides img:hover{
+    transform: scale(1.05);
+}
+#about .row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+#about .fade{
+    opacity: 0.6;
+}
+#about img.active,
+#about img.fade:hover {
+  opacity: 1!important;
+}  
+.scrollmenu {
+    width: 100%;
+    overflow: scroll auto;
+    white-space: nowrap;
+}
+#about ::-webkit-scrollbar {
+    height: 15px;
+}  
+/* Track */
+#about ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}   
+/* Handle */
+#about ::-webkit-scrollbar-thumb {
+    background: #1EA249; 
+    border-radius: 10px;
+}  
+/* Handle on hover */
+#about ::-webkit-scrollbar-thumb:hover {
+    background: #5ecf84; 
+}
+
+/* About text */
+#about .about-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+#about h1{
+    font-family: 'Merriweather', serif;
+    font-size: 40px;
+    padding-bottom: 1.5rem;
+    color: #1EA249;
+}
+#about .about-text p{
+    text-align: justify;
+    font-family: 'Roboto', sans-serif;
+}
+/* Responsive design */
+@media screen and (max-width: 900px) {    
+    #about .col{
+        -ms-flex: 100%; 
+        flex: 100%;
+        max-width: 100%;
+        padding: 0 1.5rem;
+    }
+    #about .about-text{
+        margin-top: 2.5rem;
+    }
+}
+@media screen and (max-width: 490px) {
+    #about .mySlides img{
+        height: 20rem!important;
+    }
+    #about .about-text{
+        margin-top: 2.5rem;
+    }
+}
+
+/* photo collage Section */
+#nature h1, #potrait h1, #wildlife h1, #wedding h1{
+    color: #1EA249;
+    font-family:  'Merriweather', serif;
+    font-size: 35px;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+#nature .row, #potrait .row, #wildlife .row, #wedding .row{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+#nature .column, #potrait .column, #wildlife .column, #wedding .column  {
+    flex: 33.33%;
+    max-width: 33.33%;
+    padding: 0 4px;
+}
+#nature .container, #potrait .container, #wildlife .container, #wedding .container{
+    position: relative;
+    margin-bottom: 0.5rem;
+}
+#nature .column img, #potrait .column img, #wildlife .column img, #wedding .column img{
+    width: 100%;
+    display: block;
+}
+#nature .overlay, #potrait .overlay, #wildlife .overlay, #wedding .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .3s ease;
+    background-color: #1EA249;
+}
+#nature .container:hover .overlay, #potrait .container:hover .overlay, #wildlife .container:hover .overlay, #wedding .container:hover .overlay {
+    opacity: 0.6;
+}
+#nature .icon, #potrait .icon, #wildlife .icon, #wedding .icon{
+    color: #fff;
+    font-size: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+/* Responsive Design */
+@media screen and (max-width: 550px) {
+    #nature .column, #potrait .column, #wildlife .column, #wedding .column {
+      flex: 100%;
+      max-width: 100%;
+    }
+}  
+
+/* Footer */
+footer{
+    background-color: #1EA249;
+    width: 100%;
+    padding: 0.5rem;
+    color: #fff;
+    text-align: center;
+    font-size: 15px;
+    margin-top: 4rem;
+}
