@@ -147,7 +147,7 @@ h1:after {
 /* Home Section */
 #home{
     display: flex;
-    background: url('images/beach.jpg') no-repeat center;
+    background: url('../images/beach.jpg') no-repeat center;
     height: 100vh;
     color: #111;
     background-size: cover;
