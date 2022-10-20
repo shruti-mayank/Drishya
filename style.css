@@ -1,0 +1,29 @@
+body{
+    background-color: rgb(99, 210, 173);
+/* element selector */
+
+}
+#one>p{
+    color: rgb(217, 198, 235);
+/* nested selector */
+
+}
+#one{
+    background-color: aqua;
+
+/* class selector */
+}
+.pup{
+    color: blue;
+/* id selector */
+
+}
+.heighlight{
+    background-color:rgba(172, 172, 205, 0.79);
+    font-size: px;
+}
+*{
+    font-family: fantasy;
+/* universal selector */
+
+}
